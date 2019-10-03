@@ -1,0 +1,15 @@
+<h1>Exercises</h1>
+
+<ul id="exercises">
+<% @exercises.each do |exercise| %>
+    <li>
+        <%= link_to exercise.date.strftime("%e %b %Y at %T"), exercise_path(exercise.id) %>
+        <%= " - #{exercise.location}: #{exercise.type} #{exercise.distance}km for #{exercise.duration} mins" %>
+    </li>
+<% end %>
+</ul>
+<hr>
+<h4>Total Distance: <%= @total_distance %>km</h4>
+<h4>Total Duration: <%= @total_duration %> mins</h4>
+<h4>Average Speed: <%= @average_speed %> m/s</h4>
+

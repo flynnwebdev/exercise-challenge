@@ -1,0 +1,8 @@
+<h1>Exercise</h1>
+
+<h3><%= @exercise.date.strftime("%e %b %Y at %T") %></h3>
+<h5><%= @exercise.location %></h5>
+<p>
+    <%= @exercise.type %>
+    <%= @exercise.distance %>km for <%= @exercise.duration %> mins
+</p>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-10-03 10:28:04
+  location: MyString
+  distance: 1.5
+  duration: 1
+
+two:
+  date: 2019-10-03 10:28:04
+  location: MyString
+  distance: 1.5
+  duration: 1
